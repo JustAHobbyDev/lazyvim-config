@@ -17,6 +17,8 @@ return {
       })
     end,
     keys = {
+      { "<leader>ff", LazyVim.pick("files", { root = false }), desc = "Find Files (cwd)" },
+      { "<leader>fF", LazyVim.pick("files"), desc = "Find Files (Root Dir)" },
       { "<leader>e", "<leader>fE", desc = "Explorer Snacks (cwd)", remap = true },
       { "<leader>E", "<leader>fe", desc = "Explorer Snacks (root dir)", remap = true },
     },
